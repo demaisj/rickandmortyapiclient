@@ -4,8 +4,9 @@ Demo of Android recommended architecture patterns : MVVM, Navigation & Dependenc
 
 ## Screenshots
 
-![Character list](demo/Screenshot_20200831-220215_Interdimensional_Rick_Database.png)
-![Character detail](demo/Screenshot_20200831-220227_Interdimensional_Rick_Database.png)
+Character list | Character detail
+-------------- | ----------------
+![Character list](demo/Screenshot_20200831-220215_Interdimensional_Rick_Database.png) | ![Character detail](demo/Screenshot_20200831-220227_Interdimensional_Rick_Database.png)
 
 ## Credits
 
