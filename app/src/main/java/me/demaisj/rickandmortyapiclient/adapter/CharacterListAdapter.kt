@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import kotlinx.android.synthetic.main.character_item.view.*
 import me.demaisj.rickandmortyapiclient.R
 import me.demaisj.rickandmortyapiclient.di.GlideApp
@@ -71,6 +72,7 @@ class CharacterListAdapter : RecyclerView.Adapter<CharacterListAdapter.ViewHolde
             .with(holder.itemView.context)
             .load(character.image)
             .centerCrop()
+            .transition(withCrossFade())
             .into(holder.itemView.character_image)
 
         holder.itemView.character_name.text = character.name

@@ -12,11 +12,13 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.character_detail.*
 import me.demaisj.rickandmortyapiclient.R
 import me.demaisj.rickandmortyapiclient.di.GlideApp
 import me.demaisj.rickandmortyapiclient.viewmodel.CharacterDetailViewModel
+
 
 @AndroidEntryPoint
 class CharacterDetailFragment : Fragment() {
@@ -42,6 +44,7 @@ class CharacterDetailFragment : Fragment() {
                 .load(it.image)
                 .centerCrop()
                 .circleCrop()
+                .transition(withCrossFade())
                 .into(character_image)
 
             character_name.text = it.name
