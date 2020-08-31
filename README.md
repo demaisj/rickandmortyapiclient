@@ -1,6 +1,6 @@
 # Interdimensional Rick Database
 
-Demo of Android recommended architecture patterns : MVVM, Navigation & Dependency Injection
+Demo of Android recommended architecture patterns : MVVM, Navigation, Dependency Injection, Web Service Interface & Models
 
 ## Screenshots
 
